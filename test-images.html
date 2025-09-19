@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        .test-container {
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-image {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #333;
+            margin: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Construction Images Test</h1>
+        <p>Testing if construction images load properly:</p>
+        
+        <div>
+            <h3>Construction 1:</h3>
+            <img class="test-image" src="img/construction-1.jpg?v=2" alt="Construction 1" onload="console.log('Construction 1 loaded')" onerror="console.log('Construction 1 failed')">
+        </div>
+        
+        <div>
+            <h3>Construction 2:</h3>
+            <img class="test-image" src="img/construction-2.jpg?v=2" alt="Construction 2" onload="console.log('Construction 2 loaded')" onerror="console.log('Construction 2 failed')">
+        </div>
+        
+        <div>
+            <h3>Construction 3:</h3>
+            <img class="test-image" src="img/construction-3.jpg?v=2" alt="Construction 3" onload="console.log('Construction 3 loaded')" onerror="console.log('Construction 3 failed')">
+        </div>
+        
+        <div>
+            <h3>Construction 4:</h3>
+            <img class="test-image" src="img/construction-4.jpg?v=2" alt="Construction 4" onload="console.log('Construction 4 loaded')" onerror="console.log('Construction 4 failed')">
+        </div>
+        
+        <div>
+            <h3>Working Carousel Image (for comparison):</h3>
+            <img class="test-image" src="img/carousel-1.jpg" alt="Carousel 1" onload="console.log('Carousel 1 loaded')" onerror="console.log('Carousel 1 failed')">
+        </div>
+    </div>
+</body>
+</html>
