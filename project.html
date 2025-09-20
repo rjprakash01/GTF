@@ -305,7 +305,7 @@
     <!-- Project Filter Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.nav-link');
+            const filterButtons = document.querySelectorAll('.nav-pills a[data-filter]');
             const projectItems = document.querySelectorAll('.project-item');
             
             filterButtons.forEach(button => {
